@@ -1,4 +1,4 @@
-let peliculas = [{
+let peliculas2 = [{
     Nombre: "Fantastic Beasts: The Secrets Of Dumbledore",
     Precio: 125000,
     Descripcion: "El profesor Albus Dumbledore sabe que el poderoso mago oscuro Gellert Grindelwald está haciendo planes para apoderarse del mundo mágico. Incapaz de detenerlo él solo, confía en el Magizoólogo Newt Scamander para dirigir un intrépido equipo de magos, brujas y un valiente panadero Muggle en una misión peligrosa, donde se encuentran con antiguos y nuevos animales y se enfrentan a una legión cada vez más numerosa de seguidores de Grindelwald.",

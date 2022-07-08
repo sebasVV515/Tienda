@@ -2,7 +2,7 @@ let peliculas = [{
     Nombre: "Shark Bait",
     Precio: 125000,
     Descripcion: "Un grupo de amigos que disfrutan de un fin de semana roban un par de motos acuáticas que los llevan al mar y terminan en una horrible colisión frontal. Luchan por encontrar el camino a casa con un amigo gravemente herido mientras los depredadores acechan en las aguas debajo.",
-    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/sharkbait.jpg?alt=media&token=7883b1a6-3f2c-4100-b166-e96634148bd2","https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/sharkbait.jpg?alt=media&token=7883b1a6-3f2c-4100-b166-e96634148bd2"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/sharkbait.jpg?alt=media&token=7883b1a6-3f2c-4100-b166-e96634148bd2","https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thelostcity.jpg?alt=media&token=523a5e43-215e-4645-b21f-c0019cd82f78"]
 },{
     Nombre: "The Lost City",
     Precio: 235000,
@@ -49,3 +49,49 @@ let peliculas = [{
     Descripcion: "Celebre la alegría de un tiro perfectamente ejecutado en la ingle cuando Johnny Knoxville, Steve-O y el resto de la pandilla regresan junto con algunos recién llegados para una ronda final de exhibiciones de acrobacias y comedia hilarantes, tremendamente absurdas y, a menudo, peligrosas.",
     Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/jackass.jpg?alt=media&token=4eac8f6c-9ec7-4923-87ba-d265ab89ecab","https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/jackass.jpg?alt=media&token=4eac8f6c-9ec7-4923-87ba-d265ab89ecab"]
 }]
+
+let fila = document.getElementById("fila")
+
+peliculas.forEach(function(pelicula){
+    let columna = document.createElement("div")
+    columna.classList.add("col", "my-2")
+    let card = document.createElement("div")
+    card.classList.add("card", "mb-3", "h-100", "text-center")
+    let row = document.createElement("div")
+    row.classList.add("row", "g-0")
+    let foto = document.createElement("div")
+    foto.classList.add("col-md-4")
+    let img = document.createElement("img")
+    img.classList.add("img-fluid", "rounded-start")
+    img.src = pelicula.Imagenes[0]
+    let text = document.createElement("div")
+    text.classList.add("col-md-8")
+    let body = document.createElement("div")
+    body.classList.add("card-body")
+    let titulo = document.createElement("h3")
+    titulo.classList.add("card-title", "negro")
+    titulo.textContent = pelicula.Nombre
+    let descripcion = document.createElement("p")
+    descripcion.classList.add("card-text", "gris", "cardt")
+    descripcion.textContent = pelicula.Descripcion
+    let precio = document.createElement("p")
+    precio.classList.add("card-text", "negro")
+    precio.textContent = pelicula.Precio
+    columna.appendChild(card)
+    card.appendChild(row)
+    row.appendChild(foto)
+    row.appendChild(text)
+    foto.appendChild(img)
+    text.appendChild(body)
+    body.appendChild(titulo)
+    body.appendChild(descripcion)
+    body.appendChild(precio)
+    fila.append(columna)
+    columna.addEventListener("mouseover",function(){
+        img.src = pelicula.Imagenes[1]
+    })
+    columna.addEventListener("mouseleave",function(){
+        img.src = pelicula.Imagenes[0]
+    })
+})
+

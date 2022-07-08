@@ -2,7 +2,23 @@
     font-family: 'Permanent Marker', cursive;
     color: white;
 }
+.card{
+    max-height: 209px;
+}
+.cardt{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .fondo{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,67,208,1) 35%, rgba(0,212,255,1) 100%);
+}
+.negro{
+    color: black;
+}
+.gris{
+    color: gray;
 }
