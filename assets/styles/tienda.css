@@ -1,9 +1,11 @@
 *{
-    font-family: 'Permanent Marker', cursive;
     color: white;
 }
 .card{
     max-height: 209px;
+}
+.fuente{
+    font-family: 'Permanent Marker', cursive;
 }
 .cardt{
     display: -webkit-box;
@@ -21,4 +23,10 @@
 }
 .gris{
     color: gray;
+}
+footer{
+    height: 50px;
+    background-color: rgb(33,37,41);
+    text-align: center;
+    line-height: 50px;
 }
