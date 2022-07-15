@@ -52,110 +52,110 @@ export let peliculas = [{
     Nombre: "Fantastic Beasts: The Secrets Of Dumbledore",
     Precio: 125000,
     Descripcion: "El profesor Albus Dumbledore sabe que el poderoso mago oscuro Gellert Grindelwald está haciendo planes para apoderarse del mundo mágico. Incapaz de detenerlo él solo, confía en el Magizoólogo Newt Scamander para dirigir un intrépido equipo de magos, brujas y un valiente panadero Muggle en una misión peligrosa, donde se encuentran con antiguos y nuevos animales y se enfrentan a una legión cada vez más numerosa de seguidores de Grindelwald.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/fantasticbeast.jpg?alt=media&token=d0e4c5db-2f86-43c2-80b5-0376a4ee1e36"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/fantasticbeast.jpg?alt=media&token=d0e4c5db-2f86-43c2-80b5-0376a4ee1e36"]
 },{
     Nombre: "9 Bullets",
     Precio: 235000,
     Descripcion: "Una exbailarina de burlesque convertida en autora (Lena Headey) descubre una segunda oportunidad en la vida y la redención cuando arriesga todo para rescatar a su joven vecino después de que presencia el asesinato de sus padres. Ahora, huyendo del jefe del crimen local (Sam Worthington), quien resulta ser su ex de toda la vida, hace un intento desesperado por poner al niño a salvo.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/9bullets.jpg?alt=media&token=dd1a957b-e8f7-4398-899c-09217fd1bc58"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/9bullets.jpg?alt=media&token=dd1a957b-e8f7-4398-899c-09217fd1bc58"]
 },{
     Nombre: "The Pirates: The Last Royal Treasure",
     Precio: 45000,
     Descripcion: "Una gran batalla naval entre piratas, bandidos y pioneros que buscan una foca que desapareció en el ataque de una ballena antes de la fundación de la dinastía Joseon.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thepirates.jpg?alt=media&token=59b1c348-13e5-4d5c-8551-1d19be3dc276"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thepirates.jpg?alt=media&token=59b1c348-13e5-4d5c-8551-1d19be3dc276"]
 },{
     Nombre: "The Host",
     Precio: 57000,
     Descripcion: "Los habitantes de Seúl observan sorprendidos un extraño objeto que cuelga de un puente sobre el río Han. El objeto es, en realidad, una monstruosa criatura mutante que al despertar devora a todo aquel que se cruza en su camino. En medio de tanto horror, la criatura mutante rapta a la hija del dueño de un quiosco que vive felizmente a la orilla del río. Mientras el ejército fracasa una y otra vez en sus intentos de destruir al monstruo, este hombrecillo anónimo y su familia intentan recuperar a su hija.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thehost.jpg?alt=media&token=54de9660-e3e8-4fa8-a9bd-209c3f58447f"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thehost.jpg?alt=media&token=54de9660-e3e8-4fa8-a9bd-209c3f58447f"]
 },{
     Nombre: "Belle",
     Precio: 25600,
     Descripcion: "En la vida real, Suzu es una adolescente acomplejada atrapada en su pequeño pueblo de montaña con su padre. Pero en el mundo virtual de “U”, Suzu se convierte en Belle, un icono musical con más de cinco mil millones de seguidores. Su vida tomará un giro inesperado cuando Belle conozca a Bestia, una criatura tan fascinante como aterradora.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/belle.jpg?alt=media&token=c4fd75fa-e0f8-4305-88eb-5341f1e82467"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/belle.jpg?alt=media&token=c4fd75fa-e0f8-4305-88eb-5341f1e82467"]
 },{
     Nombre: "My Best Friend Anne Frank",
     Precio: 35000,
     Descripcion: "Basada en la amistad real entre Ana Frank y Hannah Goslar: desde el Ámsterdam ocupado por los nazis hasta su desgarrador reencuentro en un campo de concentración.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/annefrank.jpg?alt=media&token=0291d60e-40fd-4f06-b94f-e2da4439d6d5"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/annefrank.jpg?alt=media&token=0291d60e-40fd-4f06-b94f-e2da4439d6d5"]
 },{
     Nombre: "Adele One Night Only",
     Precio: 62000,
     Descripcion: "Tras seis años de ausencia, la cantante británica Adele vuelve a ponerse delante de los focos con este especial que incluye un concierto en Los Ángeles y una amplia entrevista concedida a la periodista Oprah Winfrey.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/adele.jpg?alt=media&token=549ca369-5b7d-47d5-a581-8d7c2a9e062b"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/adele.jpg?alt=media&token=549ca369-5b7d-47d5-a581-8d7c2a9e062b"]
 },{
     Nombre: "The Contractor",
     Precio: 34200,
     Descripcion: "Después de ser dado de baja involuntariamente de las Fuerzas Especiales de EE. UU., James Harper decide apoyar a su familia uniéndose a una organización de contratación privada junto a su mejor amigo y bajo el mando de un compañero veterano. En el extranjero en una misión encubierta, Harper debe evadir a quienes intentan matarlo mientras regresa a casa.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thecontractor.jpg?alt=media&token=a8d46a6d-2cbb-4759-8664-503a45a407a5"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thecontractor.jpg?alt=media&token=a8d46a6d-2cbb-4759-8664-503a45a407a5"]
 },{
     Nombre: "The Bubble",
     Precio: 61000,
     Descripcion: "Para relanzar su carrera, una actriz se apunta a una secuela de gran éxito llena de cómicos percances y aprietos durante la pandemia.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/bubble.jpg?alt=media&token=2a44a592-9aa2-4c39-b7cf-4f7f2a37a252"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/bubble.jpg?alt=media&token=2a44a592-9aa2-4c39-b7cf-4f7f2a37a252"]
 },{
     Nombre: "The Dog Who Wouldn't Be Quiet",
     Precio: 26000,
     Descripcion: "Sebastián, un joven de treinta y tantos años, tiene varios trabajos temporales que van y vienen y lo presionan, y abraza el amor cada vez que encuentra la oportunidad. A través de pequeños hechos puntuales, su transformación se retrata en el contexto de un mundo que también se transforma y coquetea con un posible apocalipsis.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thedogwho.jpg?alt=media&token=985698e1-46be-4b2e-932f-26067d03988c"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/thedogwho.jpg?alt=media&token=985698e1-46be-4b2e-932f-26067d03988c"]
 },{
     Nombre: "Against The Ice",
     Precio: 27700,
     Descripcion: "Basada en hechos reales. 1909. La expedición danesa Alabama, liderada por el Capitán Ejnar Mikkelsen (Coster-Waldau) emprende una misión para demostrar que Groenlandia no está dividida en dos trozos de tierra y refutar el reclamo de Estados Unidos sobre el territorio. Dejando atrás a su tripulación, le acompañará en el viaje, que llegarán a realizar incluso a pie por el hielo, el inexperto Iver Iversen (Joe Cole).",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/againsttheice.jpg?alt=media&token=1d49e004-645d-4bec-a802-183f29aab95c"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/againsttheice.jpg?alt=media&token=1d49e004-645d-4bec-a802-183f29aab95c"]
 },{
     Nombre: "Moonshot",
     Precio: 39200,
     Descripcion: "Moonshot sucede en un futuro en que la élite humana ha hecho habitable y colonizado Marte. Dos estudiantes universitarios se unen y embarcan en una lanzadera espacial para viajar al Planeta Rojo y reunirse con sus seres queridos.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/moonshot.jpg?alt=media&token=3d41fc91-1f61-44cf-a9e6-9eb839da8017"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/moonshot.jpg?alt=media&token=3d41fc91-1f61-44cf-a9e6-9eb839da8017"]
 },{
     Nombre: "Better Nate Than Ever",
     Precio: 29600,
     Descripcion: "Un joven tiene grandes sueños de actuar en Broadway (Musicales), solo hay un problema: ni siquiera puede conseguir un papel en una obra de la escuela, pero cuando sus padres se van de la ciudad, Nate y su mejor amiga se escapan a Nueva York para tener una oportunidad única en la vida de demostrar que todos están equivocados.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/betternate.jpg?alt=media&token=fdb90490-3ca8-4bb5-aecd-ea90a43ef67d"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/betternate.jpg?alt=media&token=fdb90490-3ca8-4bb5-aecd-ea90a43ef67d"]
 },{
     Nombre: "Apollo 101/2: A Space Age Childhood",
     Precio: 84600,
     Descripcion: "Una aventura de la era espacial ambientada en el contexto de la misión lunar Apolo de 1969 e inspirada en la infancia del director Richard Linklater.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/apollo.jpg?alt=media&token=b1376002-4c01-43d1-aa24-d3f24dab84d3"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/apollo.jpg?alt=media&token=b1376002-4c01-43d1-aa24-d3f24dab84d3"]
 },{
     Nombre: "Turning Red",
     Precio: 67000,
     Descripcion: "Mei Lee, una niña de 13 años un poco rara pero segura de sí misma, se debate entre ser la hija obediente que su madre quiere que sea y el caos propio de la adolescencia. Ming, su protectora y ligeramente exigente madre, no se separa nunca de ella lo que es una situación poco deseable para una adolescente. Y por si los cambios en su vida y en su cuerpo no fueran suficientes, cada vez que se emociona demasiado (lo que le ocurre prácticamente todo el tiempo), se convierte en un panda rojo gigante.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/turningred.jpg?alt=media&token=7281efb2-b16c-4bdc-8e07-9a2c6c928a14"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/turningred.jpg?alt=media&token=7281efb2-b16c-4bdc-8e07-9a2c6c928a14"]
 },{
     Nombre: "The Adam Project",
     Precio: 32700,
     Descripcion: "Adam Reed es un piloto de caza que viaja en el tiempo. Cuando se estrella en el año 2022, conoce a su yo de 12 años y juntos emprenden una misión para salvar el futuro.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/adamproject.jpg?alt=media&token=69bae6b6-c41d-4ffd-ac2c-1e77913716f4"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/adamproject.jpg?alt=media&token=69bae6b6-c41d-4ffd-ac2c-1e77913716f4"]
 },{
     Nombre: "Redeeming Love",
     Precio: 61300,
     Descripcion: "Situada en la Nueva Inglaterra de 1835, la trama sigue la historia de Angela, una pequeña que fue rechazada por su padre debido a que fue producto de una aventura adultera con su madre Mae. Desde entonces, la chica se sintió culpable de la depresión de su madre y de su propio abandono, creciendo con un evidente odio hacia los hombres, todos ellos obsesionados por la fiebre de oro de la época. En su adolescencia, Angela tuvo que venderse a la prostitución para tener un lugar donde dormir y en medio de ese odio, conoce a Michael Hosea, un hombre piadoso que parece cruzar su camino con Angela para conducirla al amor redentor de Dios, desafiando, día a día, las amargas expectativas y resistencia de ella, quien no parece creer que merece algo más en la vida, algo que pueda hacerla verdaderamente feliz.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/redeeminglove.jpg?alt=media&token=717eae8d-4409-4c21-ab7b-8673edd220dc"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/redeeminglove.jpg?alt=media&token=717eae8d-4409-4c21-ab7b-8673edd220dc"]
 },{
     Nombre: "Panama",
     Precio: 20100,
     Descripcion: "Un ex marine es contratado por un contratista de defensa para viajar a Panamá para completar un trato de armas. En el proceso, se involucra con la invasión estadounidense de Panamá y aprende una lección importante sobre la verdadera naturaleza del poder político.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/panama.jpg?alt=media&token=29090b3a-e916-4e04-99d7-e03dd91ea7da"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/panama.jpg?alt=media&token=29090b3a-e916-4e04-99d7-e03dd91ea7da"]
 },{
     Nombre: "Master",
     Precio: 35000,
     Descripcion: "Dos mujeres afroamericanas comienzan a compartir experiencias inquietantes en una universidad predominantemente blanca en Nueva Inglaterra.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/master.jpg?alt=media&token=8fea2a45-f9e6-4cdb-b324-a21ba21e5727"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/master.jpg?alt=media&token=8fea2a45-f9e6-4cdb-b324-a21ba21e5727"]
 },{
     Nombre: "Dog",
     Precio: 64000,
     Descripcion: "Un guardabosques del ejército y su perro se embarcan en un viaje por carretera a lo largo de la Pacific Coast Highway para asistir al funeral de un amigo.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/dog.jpg?alt=media&token=0542b0b9-73e4-43db-a376-956b49097859"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/dog.jpg?alt=media&token=0542b0b9-73e4-43db-a376-956b49097859"]
 },{
     Nombre: "Cheaper By The Dozen",
     Precio: 97800,
     Descripcion: "Una nueva historia basada en el exitoso filme del 2003 sobre las alocadas aventuras de una muy variada familia de 12, los Baker.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/cheaperby.jpg?alt=media&token=ebc726c9-9dc9-44ce-8eb0-bcbba886854a"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/cheaperby.jpg?alt=media&token=ebc726c9-9dc9-44ce-8eb0-bcbba886854a"]
 },{
     Nombre: "Spider-man: No Way Home",
     Precio: 126500,
     Descripcion: "Peter Parker es desenmascarado y por tanto no es capaz de separar su vida normal de los enormes riesgos que conlleva ser un súper héroe. Cuando pide ayuda a Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man.",
-    Imagen: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/spiderman.jpg?alt=media&token=dabb64e5-5c21-480a-b88f-3cf982a444eb"]
+    Imagenes: ["https://firebasestorage.googleapis.com/v0/b/svtienda-941c4.appspot.com/o/spiderman.jpg?alt=media&token=dabb64e5-5c21-480a-b88f-3cf982a444eb"]
 }]
