@@ -28,6 +28,12 @@
 .gris{
     color: gray;
 }
+.blanco{
+    color: white;
+}
+.minimo{
+    min-height: 800px;
+}
 footer{
     height: 50px;
     background-color: rgb(33,37,41);

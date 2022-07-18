@@ -1,5 +1,4 @@
 export function pintarPeliculas(peliculas){
-    
     let fila = document.getElementById("fila")
     fila.innerHTML = ""
     peliculas.forEach(function(pelicula){
@@ -24,7 +23,7 @@ export function pintarPeliculas(peliculas){
         let descripcion = document.createElement("p")
         descripcion.classList.add("card-text", "gris", "cardt", "fuente")
         descripcion.textContent = pelicula.Descripcion
-        let precio = document.createElement("p")
+        let precio = document.createElement("h2")
         precio.classList.add("card-text", "negro")
         precio.textContent = "$ "+pelicula.Precio
         
@@ -40,12 +39,12 @@ export function pintarPeliculas(peliculas){
         
         fila.appendChild(columna)
         
-        columna.addEventListener("mouseover",function(){
-            // img.src = "pelicula.Imagenes[1]"
-            img.src = "../../assets/img/placeholder.jpg"
-        })
-        columna.addEventListener("mouseleave",function(){
-            img.src = pelicula.Imagenes[0]
-        })
+        // columna.addEventListener("mouseover",function(){
+        //     // img.src = "pelicula.Imagenes[1]"
+        //     img.src = "../../assets/img/placeholder.jpg"
+        // })
+        // columna.addEventListener("mouseleave",function(){
+        //     img.src = pelicula.Imagenes[0]
+        // })
     })
 }
