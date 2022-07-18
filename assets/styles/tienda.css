@@ -4,6 +4,9 @@
 .fuente{
     font-family: 'Permanent Marker', cursive;
 }
+.logo{
+    height: 50px;
+}
 .cardt{
     display: -webkit-box;
     -webkit-line-clamp: 4;
