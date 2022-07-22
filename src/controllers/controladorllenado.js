@@ -23,6 +23,9 @@ export function pintarPeliculas(peliculas){
         let descripcion = document.createElement("p")
         descripcion.classList.add("card-text", "gris", "cardt", "fuente")
         descripcion.textContent = pelicula.Descripcion
+        let calificacion = document.createElement("span")
+        calificacion.classList.add("d-none")
+        calificacion.textContent = pelicula.Calificacion
         let precio = document.createElement("h2")
         precio.classList.add("card-text", "negro")
         precio.textContent = "$ "+pelicula.Precio
@@ -35,6 +38,7 @@ export function pintarPeliculas(peliculas){
         col2.appendChild(body)
         body.appendChild(titulo)
         body.appendChild(descripcion)
+        body.appendChild(calificacion)
         body.appendChild(precio)
         
         fila.appendChild(columna)
