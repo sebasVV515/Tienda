@@ -53,11 +53,19 @@ if(JSON.parse(localStorage.getItem("carrito"))==null){
 cantCarro.textContent = carrito.length
 
 agregar.addEventListener("click",function(){
+    agregar.classList.add("disabled")
+    let notif = document.getElementById("notification")
+    notif.classList.remove("invisible")
     let cantidad = document.getElementById("cantidad").value
     producto.cantidad=cantidad
     carrito.push(producto)
     localStorage.setItem("carrito", JSON.stringify(carrito))
     cantCarro.textContent = carrito.length
+    
+    setTimeout(function(){
+        agregar.classList.remove("disabled")
+        notif.classList.add("invisible")
+    },3000)
 })
 
 

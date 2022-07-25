@@ -40,3 +40,13 @@ footer{
     text-align: center;
     line-height: 50px;
 }
+.colDesc{
+    display: flex;
+    justify-content: start;
+}
+.colDesc img{
+    height: 407px;
+}
+.cardp{
+    max-height: 409px;
+}

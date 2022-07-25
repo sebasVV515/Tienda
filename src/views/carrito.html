@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../../assets/styles/tienda.css">
-    <title>Tienda</title>
+    <title>Carrito</title>
 </head>
 <body class="fondo">
     <header class="animate__animated animate__backInLeft">
@@ -25,22 +25,22 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Peliculas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./peliculas.html">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link"href="./carrito.html">
+                            <a class="nav-link active" href="">
                                 <i class="bi bi-cart3 fs-3"></i>
                                 <span id="cantCarrito" class="position-absolute top-45 start-350 translate-middle badge rounded-pill bg-danger">
                                     0
@@ -53,16 +53,12 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="container mt-5 minimo">
-                <div class="row">
-                    <div class="col-12">
-                        <input type="search" class="form-control my-2" placeholder="Buscar pelicula" id="buscar">
-                    </div>
-                </div>
-                <div id="fila" class="row row-cols-1 row-cols-md-3">
-                
-                </div>
+        <section class="row">
+            <div id="contenedor" class="container my-5 col-12 col-md-7">
+            
+            </div>
+            <div id="detalles" class="col-12 col-md-4">
+                <p id="cantidad"></p>
             </div>
         </section>
     </main>
@@ -71,6 +67,6 @@
         <a href="https://github.com/sebasVV515/Tienda">GitHub</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="../controllers/controladorProductos.js" type="module"></script>
+    <script src="../controllers/controladorCarrito.js"></script>
 </body>
 </html>
