@@ -4,8 +4,8 @@ let contenedor = document.getElementById("contenedor")
 let cantidadProductos = 0
 contenedor.innerHTML = ""
 
-
 if(carrito==null){
+    cantCarro.classList.add("invisible")
     let fila = document.createElement("div")
     fila.classList.add("row")
     let col1 = document.createElement("div")
@@ -30,6 +30,7 @@ if(carrito==null){
     fila.appendChild(col2)
     contenedor.appendChild(fila)
 }else{
+    cantCarro.classList.remove("invisible")
     cantCarro.textContent = carrito.length
     carrito.forEach(function(productos){
         let fila = document.createElement("div")

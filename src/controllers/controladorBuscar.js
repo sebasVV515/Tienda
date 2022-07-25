@@ -1,5 +1,6 @@
 import { peliculas } from "../helpers/peliculasbd.js"
 import { pintarPeliculas } from "./controladorllenado.js"
+
 export function buscarProducto(){
     let buscar = document.getElementById("buscar")
     buscar.addEventListener("keyup", function(e){

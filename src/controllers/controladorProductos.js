@@ -3,13 +3,7 @@ import { pintarPeliculas } from "./controladorllenado.js";
 import { buscarProducto } from "./controladorBuscar.js";
 import { info } from "./controladorinfo.js";
 
-let carrito = JSON.parse(localStorage.getItem("carrito"))
-let cantCarro = document.getElementById("cantCarrito")
-if(carrito==null){
-    carrito=[]
-}else{
-    cantCarro.textContent = carrito.length
-}
+
 pintarPeliculas(peliculas)
 buscarProducto()
 let contenedor = document.getElementById("fila")

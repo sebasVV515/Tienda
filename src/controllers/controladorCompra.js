@@ -32,7 +32,6 @@ titulo.textContent = producto.Nombre
 descripcion.textContent = producto.Descripcion
 precio.textContent = producto.Precio
 
-// calificacion.textContent = producto.Calificacion
 let estrella1 = document.getElementById("star1")
 let estrella2 = document.getElementById("star2")
 let estrella3 = document.getElementById("star3")
@@ -47,12 +46,16 @@ let cantCarro = document.getElementById("cantCarrito")
 let carrito
 if(JSON.parse(localStorage.getItem("carrito"))==null){
     carrito=[]
+    cantCarro.classList.add("invisible")
 }else{
     carrito = JSON.parse(localStorage.getItem("carrito"))
+    cantCarro.classList.remove("invisible")
+    cantCarro.textContent = carrito.length
 }
 cantCarro.textContent = carrito.length
 
 agregar.addEventListener("click",function(){
+    cantCarro.classList.remove("invisible")
     agregar.classList.add("disabled")
     let notif = document.getElementById("notification")
     notif.classList.remove("invisible")
@@ -61,7 +64,6 @@ agregar.addEventListener("click",function(){
     carrito.push(producto)
     localStorage.setItem("carrito", JSON.stringify(carrito))
     cantCarro.textContent = carrito.length
-    
     setTimeout(function(){
         agregar.classList.remove("disabled")
         notif.classList.add("invisible")

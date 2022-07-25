@@ -1,3 +1,12 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+main{
+    margin-top: 76px;
+}
 .card{
     max-height: 209px;
 }
