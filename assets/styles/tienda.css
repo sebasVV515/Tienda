@@ -24,6 +24,14 @@ main{
     text-overflow: ellipsis;
     font-size: 15px;
 }
+.cardtc{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
 .card-title{
     font-size: 20px;
 }
@@ -58,4 +66,20 @@ footer{
 }
 .cardp{
     max-height: 409px;
+}
+.carrito{
+    margin-right: 530px;
+}
+.cCarrito{
+    min-height: 84vh;
+    width: 100%;
+}
+.detalles{
+    background: white;
+    margin-top: 55px;
+    height: 70vh;
+    position: fixed;
+    right: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }

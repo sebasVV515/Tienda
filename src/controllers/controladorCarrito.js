@@ -1,10 +1,17 @@
+import { pintarResumenCompra } from "./controladorPintarResumen.js"
+
 let carrito = JSON.parse(localStorage.getItem("carrito"))
 let cantCarro = document.getElementById("cantCarrito")
 let contenedor = document.getElementById("contenedor")
-let cantidadProductos = 0
+let mostrarTotal = document.getElementById("total")
+let mostrarCantidad = document.getElementById("cantidadtotal")
+let limpiar = document.getElementById("btnborrar")
+let totalcantidad = 0
+let totalprecio = 0
 contenedor.innerHTML = ""
 
 if(carrito==null){
+    limpiar.classList.add("disabled")
     cantCarro.classList.add("invisible")
     let fila = document.createElement("div")
     fila.classList.add("row")
@@ -30,57 +37,20 @@ if(carrito==null){
     fila.appendChild(col2)
     contenedor.appendChild(fila)
 }else{
+    limpiar.classList.remove("disabled")
     cantCarro.classList.remove("invisible")
     cantCarro.textContent = carrito.length
     carrito.forEach(function(productos){
-        let fila = document.createElement("div")
-        fila.classList.add("row")
-        let columna = document.createElement("div")
-        columna.classList.add("col", "my-2")
-        let card = document.createElement("div")
-        card.classList.add("card","cardp", "mb-3", "h-100", "text-center")
-        let row = document.createElement("div")
-        row.classList.add("row", "g-0")
-        let col1 = document.createElement("div")
-        col1.classList.add("col-md-4", "colDesc")
-        let img = document.createElement("img")
-        img.classList.add("img-fluid", "rounded-start")
-        img.src = productos.Foto
-        let col2 = document.createElement("div")
-        col2.classList.add("col-md-8")
-        let body = document.createElement("div")
-        body.classList.add("card-body", "align-self-center")
-        let titulo = document.createElement("h1")
-        titulo.classList.add("fuente")
-        titulo.textContent = productos.Nombre
-        let descripcion = document.createElement("p")
-        descripcion.classList.add("card-text", "gris", "cardt", "fuente")
-        descripcion.textContent = productos.Descripcion
-        let precio = document.createElement("h2")
-        precio.classList.add("card-text", "negro")
-        precio.textContent = productos.Precio
-        let cantidad = document.createElement("p")
-        cantidad.textContent = "Cantidad: "+productos.cantidad
-        let subtotal = document.createElement("p")
-        subtotal.textContent = Number(productos.Precio)*Number(productos.cantidad)
-
-        columna.appendChild(card)
-        card.appendChild(row)
-        row.appendChild(col1)
-        row.appendChild(col2)
-        col1.appendChild(img)
-        col2.appendChild(body)
-        body.appendChild(titulo)
-        body.appendChild(descripcion)
-        body.appendChild(precio)
-        body.appendChild(cantidad)
-        body.appendChild(subtotal)
-        
-        fila.appendChild(columna)
-        contenedor.appendChild(fila)
-
-        // let pprecio = productos.Precio.replace("$ ", "")
-        // cantidadProductos=Number(pprecio)+Number(productos.cantidad)
-        // document.getElementById("cantidad").textContent = pprecio
+        pintarResumenCompra(productos)
+        totalcantidad = totalcantidad+Number(productos.cantidad)
+        let preciosubtotal = Number(productos.Precio.replace("$ ",""))*Number(productos.cantidad)
+        totalprecio = totalprecio + preciosubtotal
     })
 }
+mostrarCantidad.textContent = "Cantidad de productos: " + totalcantidad
+mostrarTotal.textContent = "Total: $ " + totalprecio
+
+limpiar.addEventListener("click", function(e){
+    localStorage.removeItem("carrito")
+    location.reload()
+})
