@@ -83,3 +83,15 @@ footer{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+.registro{
+    border: 1px solid black;
+    width: 25%;
+    padding: 50px;
+    margin: 0 auto;
+}
+.registro2{
+    padding: 220px;
+}
+.imgregistro{
+    width: 400px;
+}

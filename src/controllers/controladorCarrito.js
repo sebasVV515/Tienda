@@ -6,6 +6,10 @@ let contenedor = document.getElementById("contenedor")
 let mostrarTotal = document.getElementById("total")
 let mostrarCantidad = document.getElementById("cantidadtotal")
 let limpiar = document.getElementById("btnborrar")
+let moneda = document.getElementById("btnmoneda")
+let monedatxt = document.getElementById("monedatxt")
+let dolar = 0
+let monedabool = 0
 let totalcantidad = 0
 let totalprecio = 0
 contenedor.innerHTML = ""
@@ -47,10 +51,23 @@ if(carrito==null){
         totalprecio = totalprecio + preciosubtotal
     })
 }
-mostrarCantidad.textContent = "Cantidad de productos: " + totalcantidad
-mostrarTotal.textContent = "Total: $ " + totalprecio
+mostrarCantidad.textContent = "Cantidad de elementos: " + totalcantidad
+mostrarTotal.textContent = "Total: $ " + totalprecio + " COP"
 
 limpiar.addEventListener("click", function(e){
     localStorage.removeItem("carrito")
     location.reload()
+})
+
+moneda.addEventListener("click", function(e){
+    if(monedabool==0){
+        monedatxt.innerHTML = " USD - COP"
+        dolar=totalprecio*0.000235265
+        mostrarTotal.textContent = "Total: $ " + dolar + " USD"
+        monedabool=1
+    }else{
+        monedatxt.innerHTML = " COP - USD"
+        mostrarTotal.textContent = "Total: $ " + totalprecio + " COP"
+        monedabool=0
+    }
 })
