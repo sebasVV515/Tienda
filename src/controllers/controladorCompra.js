@@ -1,4 +1,4 @@
-let producto = JSON.parse(localStorage.getItem("infoPelicula"))
+let producto = JSON.parse(sessionStorage.getItem("infoPelicula"))
 let titulo = document.getElementById("titulo")
 let descripcion = document.getElementById("descripcion")
 let precio = document.getElementById("precio")
@@ -9,22 +9,22 @@ function stars(cantidad){
     if(cantidad>=1){
         estrella1.classList.remove("bi-star")
         estrella1.classList.add("bi-star-fill")
-    }
-    if(cantidad>=2){
-        estrella2.classList.remove("bi-star")
-        estrella2.classList.add("bi-star-fill")
-    }
-    if(cantidad>=3){
-        estrella3.classList.remove("bi-star")
-        estrella3.classList.add("bi-star-fill")
-    }
-    if(cantidad>=4){
-        estrella4.classList.remove("bi-star")
-        estrella4.classList.add("bi-star-fill")
-    }
-    if(cantidad>=5){
-        estrella5.classList.remove("bi-star")
-        estrella5.classList.add("bi-star-fill")
+        if(cantidad>=2){
+            estrella2.classList.remove("bi-star")
+            estrella2.classList.add("bi-star-fill")
+            if(cantidad>=3){
+                estrella3.classList.remove("bi-star")
+                estrella3.classList.add("bi-star-fill")
+                if(cantidad>=4){
+                    estrella4.classList.remove("bi-star")
+                    estrella4.classList.add("bi-star-fill")
+                    if(cantidad>=5){
+                        estrella5.classList.remove("bi-star")
+                        estrella5.classList.add("bi-star-fill")
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -44,11 +44,11 @@ imagen.src = producto.Foto
 let agregar = document.getElementById("agregar")
 let cantCarro = document.getElementById("cantCarrito")
 let carrito
-if(JSON.parse(localStorage.getItem("carrito"))==null){
+if(JSON.parse(sessionStorage.getItem("carrito"))==null){
     carrito=[]
     cantCarro.classList.add("invisible")
 }else{
-    carrito = JSON.parse(localStorage.getItem("carrito"))
+    carrito = JSON.parse(sessionStorage.getItem("carrito"))
     cantCarro.classList.remove("invisible")
     cantCarro.textContent = carrito.length
 }
@@ -62,12 +62,10 @@ agregar.addEventListener("click",function(){
     let cantidad = document.getElementById("cantidad").value
     producto.cantidad=cantidad
     carrito.push(producto)
-    localStorage.setItem("carrito", JSON.stringify(carrito))
+    sessionStorage.setItem("carrito", JSON.stringify(carrito))
     cantCarro.textContent = carrito.length
     setTimeout(function(){
         agregar.classList.remove("disabled")
         notif.classList.add("invisible")
     },3000)
 })
-
-

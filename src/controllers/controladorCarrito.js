@@ -1,6 +1,6 @@
 import { pintarResumenCompra } from "./controladorPintarResumen.js"
 
-let carrito = JSON.parse(localStorage.getItem("carrito"))
+let carrito = JSON.parse(sessionStorage.getItem("carrito"))
 let cantCarro = document.getElementById("cantCarrito")
 let contenedor = document.getElementById("contenedor")
 let mostrarTotal = document.getElementById("total")
@@ -51,11 +51,11 @@ if(carrito==null){
         totalprecio = totalprecio + preciosubtotal
     })
 }
-mostrarCantidad.textContent = "Cantidad de elementos: " + totalcantidad
+mostrarCantidad.textContent = "Elementos: " + totalcantidad
 mostrarTotal.textContent = "Total: $ " + totalprecio + " COP"
 
 limpiar.addEventListener("click", function(e){
-    localStorage.removeItem("carrito")
+    sessionStorage.removeItem("carrito")
     location.reload()
 })
 

@@ -1,4 +1,4 @@
-let carrito = JSON.parse(localStorage.getItem("carrito"))
+let carrito = JSON.parse(sessionStorage.getItem("carrito"))
 let cantCarro = document.getElementById("cantCarrito")
 if(carrito==null){
     carrito=[]
