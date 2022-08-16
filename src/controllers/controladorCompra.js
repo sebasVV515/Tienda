@@ -64,8 +64,8 @@ agregar.addEventListener("click",function(){
     carrito.push(producto)
     sessionStorage.setItem("carrito", JSON.stringify(carrito))
     cantCarro.textContent = carrito.length
+    agregar.innerHTML = "Agregado"
     setTimeout(function(){
-        agregar.classList.remove("disabled")
         notif.classList.add("invisible")
     },3000)
 })

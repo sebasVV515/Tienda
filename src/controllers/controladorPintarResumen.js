@@ -24,7 +24,13 @@ export function pintarResumenCompra(productos){
     descripcion.textContent = productos.Descripcion
     let precio = document.createElement("h5")
     precio.classList.add("card-text", "negro")
-    precio.textContent = "Precio Unidad: "+productos.Precio
+    precio.textContent = "Precio Unidad: "+productos.Precio+" COP"
+    precio.setAttribute("name", "precioP")
+    let dollar = document.createElement("h5")
+    dollar.classList.add("card-text", "negro", "d-none")
+    let dollaro = productos.Precio.replace("$ ","")*0.000235265
+    dollar.textContent = "Precio Unidad: $ "+ dollaro.toFixed(2)+" USD"
+    dollar.setAttribute("name", "precioD")
     let cantidad = document.createElement("h5")
     let textunidad
     if(productos.cantidad>1){
@@ -34,8 +40,15 @@ export function pintarResumenCompra(productos){
     }
     cantidad.textContent = "Cantidad: " + productos.cantidad + " " + textunidad
     let subtotal = document.createElement("h3")
+    subtotal.classList.add("card-text", "negro")
+    subtotal.setAttribute("name","precioP")
     let preciosubtotal = Number(productos.Precio.replace("$ ",""))*Number(productos.cantidad)
-    subtotal.textContent = "Subtotal: $ " + preciosubtotal
+    subtotal.textContent = "Subtotal: $ " + preciosubtotal+" COP"
+    let subtotalD = document.createElement("h3")
+    subtotalD.classList.add("card-text", "negro", "d-none")
+    subtotalD.setAttribute("name","precioD")
+    let preciosubtotalD = preciosubtotal*0.000235265
+    subtotalD.textContent = "Subtotal: $ " + preciosubtotalD.toFixed(2)+" USD"
 
     columna.appendChild(card)
     card.appendChild(row)
@@ -46,8 +59,10 @@ export function pintarResumenCompra(productos){
     body.appendChild(titulo)
     body.appendChild(descripcion)
     body.appendChild(precio)
+    body.appendChild(dollar)
     body.appendChild(cantidad)
     body.appendChild(subtotal)
+    body.appendChild(subtotalD)
     fila.appendChild(columna)
     contenedor.appendChild(fila)
 }

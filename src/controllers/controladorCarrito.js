@@ -60,12 +60,23 @@ limpiar.addEventListener("click", function(e){
 })
 
 moneda.addEventListener("click", function(e){
+    let n = 0
     if(monedabool==0){
+        while (document.getElementsByName("precioP").length > n) {
+            document.getElementsByName("precioP")[n].classList.add("d-none")
+            document.getElementsByName("precioD")[n].classList.remove("d-none")
+            n ++;
+        }
         monedatxt.innerHTML = " USD - COP"
         dolar=totalprecio*0.000235265
-        mostrarTotal.textContent = "Total: $ " + dolar + " USD"
+        mostrarTotal.textContent = "Total: $ " + dolar.toFixed(2) + " USD"
         monedabool=1
     }else{
+        while (document.getElementsByName("precioP").length > n) {
+            document.getElementsByName("precioP")[n].classList.remove("d-none")
+            document.getElementsByName("precioD")[n].classList.add("d-none")
+            n ++;
+        }
         monedatxt.innerHTML = " COP - USD"
         mostrarTotal.textContent = "Total: $ " + totalprecio + " COP"
         monedabool=0
