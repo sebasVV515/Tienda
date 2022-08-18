@@ -9,6 +9,8 @@ main{
 }
 .card{
     max-height: 209px;
+}
+.cursor{
     cursor: pointer;
 }
 .fuente{

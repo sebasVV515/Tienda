@@ -1,9 +1,11 @@
 let producto = JSON.parse(sessionStorage.getItem("infoPelicula"))
+let peliscarrito = JSON.parse(sessionStorage.getItem("carrito"))
 let titulo = document.getElementById("titulo")
 let descripcion = document.getElementById("descripcion")
 let precio = document.getElementById("precio")
 let imagen = document.getElementById("imagen")
 let calificacion = document.getElementById("calificacion")
+
 
 function stars(cantidad){
     if(cantidad>=1){
@@ -27,6 +29,8 @@ function stars(cantidad){
         }
     }
 }
+
+
 
 titulo.textContent = producto.Nombre
 descripcion.textContent = producto.Descripcion
@@ -54,9 +58,20 @@ if(JSON.parse(sessionStorage.getItem("carrito"))==null){
 }
 cantCarro.textContent = carrito.length
 
+if(peliscarrito!=null){
+    peliscarrito.forEach(function(e){
+        if(producto.Id==e.Id){
+            agregar.classList.remove("btn-primary")
+            agregar.classList.add("disabled","btn-warning")
+            agregar.innerHTML = "Ya esta en el carrito"
+        }
+    });
+}
+
 agregar.addEventListener("click",function(){
     cantCarro.classList.remove("invisible")
-    agregar.classList.add("disabled")
+    agregar.classList.remove("btn-primary")
+    agregar.classList.add("disabled","btn-warning")
     let notif = document.getElementById("notification")
     notif.classList.remove("invisible")
     let cantidad = document.getElementById("cantidad").value
@@ -64,7 +79,7 @@ agregar.addEventListener("click",function(){
     carrito.push(producto)
     sessionStorage.setItem("carrito", JSON.stringify(carrito))
     cantCarro.textContent = carrito.length
-    agregar.innerHTML = "Agregado"
+    agregar.innerHTML = "Listo"
     setTimeout(function(){
         notif.classList.add("invisible")
     },3000)

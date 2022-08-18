@@ -5,7 +5,7 @@ export function pintarPeliculas(peliculas){
         let columna = document.createElement("div")
         columna.classList.add("col", "my-2")
         let card = document.createElement("div")
-        card.classList.add("card", "mb-3", "h-100", "text-center")
+        card.classList.add("card", "mb-3", "h-100", "text-center", "cursor")
         let row = document.createElement("div")
         row.classList.add("row", "g-0")
         let col1 = document.createElement("div")
@@ -26,6 +26,9 @@ export function pintarPeliculas(peliculas){
         let calificacion = document.createElement("span")
         calificacion.classList.add("d-none")
         calificacion.textContent = pelicula.Calificacion
+        let identificacion = document.createElement("h4")
+        identificacion.classList.add("d-none")
+        identificacion.textContent = pelicula.id
         let precio = document.createElement("h2")
         precio.classList.add("card-text", "negro")
         precio.textContent = "$ "+pelicula.Precio
@@ -39,6 +42,7 @@ export function pintarPeliculas(peliculas){
         body.appendChild(titulo)
         body.appendChild(descripcion)
         body.appendChild(calificacion)
+        body.appendChild(identificacion)
         body.appendChild(precio)
         
         fila.appendChild(columna)

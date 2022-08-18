@@ -1,5 +1,6 @@
 export function info(e){
     let objeto = {
+        Id: e.target.parentElement.parentElement.querySelector("h4").textContent,
         Foto : e.target.parentElement.parentElement.parentElement.querySelector("img").src,
         Nombre: e.target.parentElement.parentElement.querySelector("h3").textContent,
         Calificacion: e.target.parentElement.parentElement.querySelector("span").textContent,

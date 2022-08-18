@@ -8,6 +8,7 @@ let mostrarCantidad = document.getElementById("cantidadtotal")
 let limpiar = document.getElementById("btnborrar")
 let moneda = document.getElementById("btnmoneda")
 let monedatxt = document.getElementById("monedatxt")
+let detalles = document.getElementById("detalles") 
 let dolar = 0
 let monedabool = 0
 let totalcantidad = 0
@@ -15,6 +16,7 @@ let totalprecio = 0
 contenedor.innerHTML = ""
 
 if(carrito==null){
+    detalles.classList.add("d-none")
     limpiar.classList.add("disabled")
     cantCarro.classList.add("invisible")
     let fila = document.createElement("div")
@@ -41,6 +43,7 @@ if(carrito==null){
     fila.appendChild(col2)
     contenedor.appendChild(fila)
 }else{
+    contenedor.classList.add("carrito")
     limpiar.classList.remove("disabled")
     cantCarro.classList.remove("invisible")
     cantCarro.textContent = carrito.length
