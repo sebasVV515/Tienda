@@ -1,4 +1,4 @@
-export function pintarResumenCompra(productos){
+export function pintarResumenCompra(productos, position){
     let fila = document.createElement("div")
     fila.classList.add("row")
     let columna = document.createElement("div")
@@ -49,6 +49,10 @@ export function pintarResumenCompra(productos){
     subtotalD.setAttribute("name","precioD")
     let preciosubtotalD = preciosubtotal*0.000235265
     subtotalD.textContent = "Subtotal: $ " + preciosubtotalD.toFixed(2)+" USD"
+    let btnborrar = document.createElement("a")
+    btnborrar.setAttribute("id","btnborrar")
+    btnborrar.classList.add("btn", "btn-danger", "btndelete")
+    btnborrar.innerHTML = "<span id='idborrar' class='d-none'>"+position+"</span><i class='bi bi-x-lg'></i>"
 
     columna.appendChild(card)
     card.appendChild(row)
@@ -63,6 +67,7 @@ export function pintarResumenCompra(productos){
     body.appendChild(cantidad)
     body.appendChild(subtotal)
     body.appendChild(subtotalD)
+    body.appendChild(btnborrar)
     fila.appendChild(columna)
     contenedor.appendChild(fila)
 }

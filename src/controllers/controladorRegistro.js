@@ -5,6 +5,7 @@ let email = document.getElementById("usuario")
 let password = document.getElementById("contrasena")
 let mostrar = document.getElementById("mostrar")
 let ojo = document.getElementById("ojo")
+let notif = document.getElementById("notification")
 let mostrarbool = 0
 
 mostrar.addEventListener("click", function(){
@@ -35,6 +36,12 @@ boton.addEventListener("click",function(e){
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        console.log(errorCode)
         console.log(errorMessage)
+        notif.classList.remove("invisible")
+        setTimeout(function(){
+            notif.classList.add("invisible")
+        },3000)
+        notif.innerHTML = errorCode
     });
 })

@@ -86,6 +86,9 @@ footer{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+.scroll-y{
+    overflow-y: scroll;
+}
 .registro{
     border: 1px solid black;
     width: 25%;
@@ -93,7 +96,8 @@ footer{
     margin: 0 auto;
 }
 .registro2{
-    padding: 220px;
+    padding: 230px;
+    margin: 0;
 }
 .imgregistro{
     width: 400px;
@@ -123,4 +127,16 @@ footer{
 }
 .lfiltro :hover{
     color: red !important;
+}
+.pie{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.btndelete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    margin: 5px;
 }

@@ -15,7 +15,7 @@ let totalcantidad = 0
 let totalprecio = 0
 contenedor.innerHTML = ""
 
-if(carrito==null){
+function carritolimpio(){
     detalles.classList.add("d-none")
     limpiar.classList.add("disabled")
     cantCarro.classList.add("invisible")
@@ -42,16 +42,22 @@ if(carrito==null){
     fila.appendChild(col1)
     fila.appendChild(col2)
     contenedor.appendChild(fila)
+}
+
+if(carrito==null){
+    carritolimpio()
 }else{
     contenedor.classList.add("carrito")
     limpiar.classList.remove("disabled")
     cantCarro.classList.remove("invisible")
     cantCarro.textContent = carrito.length
+    let position =0
     carrito.forEach(function(productos){
-        pintarResumenCompra(productos)
+        pintarResumenCompra(productos,position)
         totalcantidad = totalcantidad+Number(productos.cantidad)
         let preciosubtotal = Number(productos.Precio.replace("$ ",""))*Number(productos.cantidad)
         totalprecio = totalprecio + preciosubtotal
+        position++
     })
 }
 mostrarCantidad.textContent = "Elementos: " + totalcantidad
@@ -85,3 +91,27 @@ moneda.addEventListener("click", function(e){
         monedabool=0
     }
 })
+let borrarbtn=document.getElementById("contenedor")
+borrarbtn.addEventListener("click",function(e){
+    totalcantidad=0
+    let totalprecio =0
+    let position = e.target.parentElement.querySelector("span").textContent
+    let tienda = carrito
+    tienda.splice(position,1);
+    carrito=tienda
+    sessionStorage.setItem("carrito",JSON.stringify(carrito))
+    cantCarro.textContent = carrito.length
+    contenedor.innerHTML = ""
+    if(carrito.length==0){
+        carritolimpio()
+    }
+    carrito.forEach(function(productos){
+        pintarResumenCompra(productos,position)
+        totalcantidad = totalcantidad+Number(productos.cantidad)
+        let preciosubtotal = Number(productos.Precio.replace("$ ",""))*Number(productos.cantidad)
+        totalprecio = totalprecio + preciosubtotal
+    })
+    mostrarCantidad.textContent = "Elementos: " + totalcantidad
+    mostrarTotal.textContent = "Total: $ " + totalprecio + " COP"
+})
+
