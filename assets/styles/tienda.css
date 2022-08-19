@@ -140,3 +140,14 @@ footer{
     border: none;
     margin: 5px;
 }
+.caneca{
+    width: 40px;
+    height: 40px;
+    margin-top: 60px;
+    position: absolute;
+    right: 560px;
+    padding: 0;
+}
+.canecam{
+    margin-bottom: 405px;
+}
